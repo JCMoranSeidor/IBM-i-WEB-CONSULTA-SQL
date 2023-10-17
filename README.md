@@ -120,8 +120,9 @@ odbc.connect(
     });
   }
 );
-
+```
 6º Arrancamos el Servicio web: node servicio-web-SQL-IBMi.js
+```console
 PS C:\DESARROLLO\IBM i WEB CONSULTA SQL\Servicio Web Consulta SQL> node .\servicio-web-SQL-IBMi.js
 (node:23276) [DEP0111] DeprecationWarning: Access to process.binding('http_parser') is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
