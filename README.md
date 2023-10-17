@@ -350,11 +350,13 @@ export default {
 };
 </script>
 ``` 
-### 14. Cuidemos la Estética. Podemos cambiar el Logotipo y el enlace de la parte superior. Todo ello se realiza en ./src/App.vue
+### 14. Cuidemos la Estética. 
+Podemos cambiar el Logotipo y el enlace de la parte superior. Todo ello se realiza en ./src/App.vue
 
-### 15. Desplegamos en IBM i: cambiamos parámetros de mi PC por los de mi IBM i
-Modificameos el Servicio Web para que utilice los parámetros de IBM i : *LOCALHOST
-Modificamos las llamadas al servicio web: cambiamos Localhost por la dirección IP de nuestro IBM i
+### 15. Desplegamos en IBM i
+Cambiamos parámetros de mi PC por los de mi IBM i
+- Modificameos el Servicio Web para que utilice los parámetros de IBM i : *LOCALHOST
+- Modificamos las llamadas al servicio web: cambiamos Localhost por la dirección IP de nuestro IBM i
 
 ### 16. Construimos nuestra aplicación web: npm run build
 ```console
@@ -446,7 +448,7 @@ v14.19.1
 ### 24. Comprbamos que aparece ambos servicios arrancados: pm2 ls
 
 ### 25. Arrancamos un navegador y comprobamos que funciona: http://172.16.210.40:8099/ 
-Usamos la dirección IP y el puerto que usamo en "servidor-express.js"
+Usamos la dirección IP y el puerto que usamos en "servidor-express.js"
 
 ### 24. Podemos editar el servicio web (con nano, por ejemplo) y modificar la sentencia SQL
 
