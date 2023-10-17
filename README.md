@@ -200,7 +200,7 @@ PS C:\DESARROLLO\IBM i WEB CONSULTA SQL\web-app-tabla-consulta> npm run serve
 ``` 
 9º Añadimos soporte de Vuetify a nuestra aplicación: vue add vuetify
 
-
+```console
 
 To address all issues (including breaking changes), run:
   npm audit fix --force
