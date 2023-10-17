@@ -442,7 +442,13 @@ Esto hace que se carguen los módulos necesarios que no copiamos antes.
 v14.19.1
 -bash-5.1$CD PATH=/QOpenSys/pkgs/lib/nodejs14/bin:$PATH
 ````
-### 22. Arrancamos el servicio web desde su Carpeta: pm2 start servicio-web-SQL-IBMi.js --watch --> Si se modifica lo rearranca
+Usamos nodejs14 en el PATH, porque tenemos instalada laversión 14 de Node.js
+### 22. Arrancamos el servicio web desde su Carpeta
+```console
+-bash-5.1$ pm2 start servicio-web-SQL-IBMi.js --watch
+```
+El parámetro --watch indica que si se modifica el archivo .js lo rearranca
+
 ### 23. Arrancamos el servidor web apache desde su Carpeta: pm2 start servidor-express.js 
 
 ### 24. Comprbamos que aparece ambos servicios arrancados: pm2 ls
