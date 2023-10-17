@@ -237,10 +237,10 @@ Run `npm audit` for details.
  vuetify  Discord community: https://community.vuetifyjs.com
  vuetify  Github: https://github.com/vuetifyjs/vuetify
  vuetify  Support Vuetify: https://github.com/sponsors/johnleider
-
+``` 
 9º Añadimos Axios a nuestra aplicación: vue add axios:
 
-
+```console
 PS C:\DESARROLLO\IBM i WEB CONSULTA SQL\web-app-tabla-consulta> vue add axios
 
 📦  Installing vue-cli-plugin-axios...
