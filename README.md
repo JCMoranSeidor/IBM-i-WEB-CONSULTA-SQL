@@ -1,9 +1,11 @@
 # IBM-i-WEB-CONSULTA-SQL
 Ejemplo sencillo de Servicio Web en Node.js y aplicación JavaScript sobre Express usando datos de IBM i
 
-1º Creamos una Carpeta: "IBM i Web Consulta SQL"
-2º Creamos dentro otra Carpeta: "Servicio Web Consulta SQL"
-3º Nos cambiamos a esa carpeta e inicializamos aplicación Node.js:
+## Paso a Paso ##
+
+### 1. Creamos una Carpeta: "IBM i Web Consulta SQL"
+### 2. Creamos dentro otra Carpeta: "Servicio Web Consulta SQL"
+### 3. Nos cambiamos a esa carpeta e inicializamos aplicación Node.js:
 ```console
 PS C:\DESARROLLO\IBM i WEB CONSULTA SQL> cd '.\Servicio Web Consulta SQL\'
 PS C:\DESARROLLO\IBM i WEB CONSULTA SQL\Servicio Web Consulta SQL> npm init
@@ -44,7 +46,7 @@ About to write to C:\DESARROLLO\IBM i WEB CONSULTA SQL\Servicio Web Consulta SQL
 Is this OK? (yes)
 PS C:\DESARROLLO\IBM i WEB CONSULTA SQL\Servicio Web Consulta SQL>
 ``` 
-4º Añadimos los packages de ODBC y RESTIFY para que los ueda usar nuestro Servicio Web: npm install odbc restify --save
+### 4. Añadimos los packages de ODBC y RESTIFY para que los ueda usar nuestro Servicio Web: npm install odbc restify --save
 ```console
 PS C:\DESARROLLO\IBM i WEB CONSULTA SQL\Servicio Web Consulta SQL> npm install odbc restify --save
 npm WARN deprecated formidable@1.2.6: Please upgrade to latest, formidable@v2 or formidable@v3! Check these notes: https://bit.ly/2ZEqIau
@@ -74,7 +76,7 @@ El resultado final: añade los módulos necesarios en la Carpeta "node_modules" 
   }
 }
 ```
-5º Creamos un archivo "servicio-web-SQL-IBMi.js":
+### 5. Creamos un archivo "servicio-web-SQL-IBMi.js":
 ```javascript
 const restify = require("restify");
 const odbc = require("odbc");
@@ -121,14 +123,14 @@ odbc.connect(
   }
 );
 ```
-6º Arrancamos el Servicio web: node servicio-web-SQL-IBMi.js
+### 6. Arrancamos el Servicio web: node servicio-web-SQL-IBMi.js
 ```console
 PS C:\DESARROLLO\IBM i WEB CONSULTA SQL\Servicio Web Consulta SQL> node .\servicio-web-SQL-IBMi.js
 (node:23276) [DEP0111] DeprecationWarning: Access to process.binding('http_parser') is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 restify escuchando en http://[::]:8033
 ```
-7º Probamos en el Navegador. Como es un GET no necesitamso más: http://localhost:8033/consulta/
+### 7. Probamos en el Navegador. Como es un GET no necesitamso más: http://localhost:8033/consulta/
 ```json
 [
   {"Nº Empleado":"000010","Nombre":"CHRISTINE","Inicial":"I","Apellido":"HAAS","Departamento":"A00","Teléfono":"3978","Fecha Contrato":"1965-01-01","Cargo":"PRES    ","Planta":18,"Género":"F","Fecha de Nacimiento":"1933-08-24","Salario":52750,"Bono":1000,"Comisión":4220},
@@ -136,7 +138,7 @@ restify escuchando en http://[::]:8033
   {"Nº Empleado":"200340","Nombre":"ROY","Inicial":"R","Apellido":"ALONZO","Departamento":"E21","Teléfono":"5698","Fecha Contrato":"1947-05-05","Cargo":"FIELDREP","Planta":16,"Género":"M","Fecha de Nacimiento":"1926-05-17","Salario":23840,"Bono":500,"Comisión":1907}
 ]
 ``` 
-8º Ahora creamos una palicación Web que muestre los resultado en forma de Tabla. Usamos para ello Vue.js como Framework JavaScript, Vuetify como biblioteca de componentes gráficos y axios como vehículo de llamada al Servicio Web.
+### 8. Ahora creamos una palicación Web que muestre los resultado en forma de Tabla. Usamos para ello Vue.js como Framework JavaScript, Vuetify como biblioteca de componentes gráficos y axios como vehículo de llamada al Servicio Web.
 Para ello nos posicionamos en el directorio raiz y creamos una aplicación Vue.js. (Utilizamos --no-git porque no queremos que nos cree un repositorio local Git):
 ```console
 PS C:\DESARROLLO\IBM i WEB CONSULTA SQL> vue create web-app-tabla-consulta --no-git
@@ -187,7 +189,7 @@ Run `npm audit` for details.
  $ npm run serve
 ```
 
-8º Podemos probar la aplicación para ver cómo se ve:
+### 9. Podemos probar la aplicación para ver cómo se ve:
 ```console
 PS C:\DESARROLLO\IBM i WEB CONSULTA SQL> cd .\web-app-tabla-consulta\
 PS C:\DESARROLLO\IBM i WEB CONSULTA SQL\web-app-tabla-consulta> npm run serve
@@ -200,7 +202,7 @@ PS C:\DESARROLLO\IBM i WEB CONSULTA SQL\web-app-tabla-consulta> npm run serve
   To create a production build, run npm run build.
 ```
 
-9º Añadimos soporte de Vuetify a nuestra aplicación: vue add vuetify
+### 10. Añadimos soporte de Vuetify a nuestra aplicación: vue add vuetify
 ```console
 
 To address all issues (including breaking changes), run:
@@ -241,7 +243,7 @@ Run `npm audit` for details.
  vuetify  Support Vuetify: https://github.com/sponsors/johnleider
 ```
 
-9º Añadimos Axios a nuestra aplicación: vue add axios:
+### 11. Añadimos Axios a nuestra aplicación: vue add axios:
 ```console
 PS C:\DESARROLLO\IBM i WEB CONSULTA SQL\web-app-tabla-consulta> vue add axios
 
@@ -292,7 +294,7 @@ Para solucionar el error, editamos "package.json" y añadimos dentro de "eslintc
 ```
 Si ahora repetimos la carga con vue add axios ya no veremos ningún error
 
-10º dentro de ./src/App.vue vemos que muestra el componente HelloWorld
+### 12. dentro de ./src/App.vue vemos que muestra el componente HelloWorld
 ```vue
     ...
     <v-main>
@@ -302,7 +304,7 @@ Si ahora repetimos la carga con vue add axios ya no veremos ningún error
 ``` 
 Modificaremos este componente para quemuestre nuestra el resultado de nuestra Consulta en fomra de Tabla.
 
-11º Borramos el contenido ./src/components/HelloWorld.vue y lo sustituimos por esto:
+### 13. Borramos el contenido ./src/components/HelloWorld.vue y lo sustituimos por esto:
 ```vue
 <template>
   <v-container>
@@ -347,14 +349,13 @@ export default {
 };
 </script>
 ``` 
-12º Cuidemos la Estética. Podemos cambiar el Logotipo y el enlace de la parte superior. Todo ello se realiza en ./src/App.vue
+### 14. Cuidemos la Estética. Podemos cambiar el Logotipo y el enlace de la parte superior. Todo ello se realiza en ./src/App.vue
 
-13º Desplegamos en IBM i: cambiamos parámetros de mi PC por los de mi IBM i
+### 15. Desplegamos en IBM i: cambiamos parámetros de mi PC por los de mi IBM i
 Modificameos el Servicio Web para que utilice los parámetros de IBM i : *LOCALHOST
 Modificamos las llamadas al servicio web: cambiamos Localhost por la dirección IP de nuestro IBM i
 
-14º Construimos nuestra aplicación web: npm run build
-
+### 16. Construimos nuestra aplicación web: npm run build
 ```console
 PS C:\DESARROLLO\IBM i WEB CONSULTA SQL\web-app-tabla-consulta>npm run build
 
@@ -404,7 +405,8 @@ PS C:\DESARROLLO\IBM i WEB CONSULTA SQL\web-app-tabla-consulta>
 ```
 Nuestra aplicación se posiciona en un directorio ./dist.
 
-15º Creamos un Servidor Web para servir nuestra aplicación. Usamos Express. Para ello creamos otro directorio que cuelgue del raiz "express-web-server". Hacemos un npm init dentro del directorio, añadimos express (npm install express) y creamos un archivo "servidor-express.js" con el contenido siguiente:
+### 17. Creamos un Servidor Web para servir nuestra aplicación.
+Usamos Express. Para ello creamos otro directorio que cuelgue del raiz "express-web-server". Hacemos un npm init dentro del directorio, añadimos express (npm install express) y creamos un archivo "servidor-express.js" con el contenido siguiente:
 ```javascript
 var express = require("express");
 var path = require("path");
@@ -418,32 +420,34 @@ app.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
 ``` 
-16º Copiamos la Carpeta ./dist de nuestra aplicación web al directorio de nuestro servidor web express
+18. Copiamos la Carpeta ./dist de nuestra aplicación web al directorio de nuestro servidor web express
 
-17ª Nos lo llevamos al IBM i
+### 18. Nos lo llevamos al IBM i
 - Creamos una Carpeta "IBM i WEB CONSULTA SQL"
 - Dentro de esta carpeta nos creamos otras 2: "servicio-web-sql-ibmi" y "servidor-web-express"
 - Dentro de "servicio-web-sql-ibmi" copiamos los archivos del servicio web menos ./node_modules
 - Dentro de "servidor-web-express" copiamos los archivos del servicio web menos ./node_modules
 
-18º Abrimos una sesión SSH en nuestro IBM i, nos posicionamos en cada directorio y ejecutamos en ambos "npm install".
+### 19. Abrimos una sesión SSH en nuestro IBM i, nos posicionamos en cada directorio y ejecutamos en ambos "npm install".
 Esto hace que se carguen los módulos necesarios que no copiamos antes.
 
-19ª Instalamos pm2
-20º Añadimos el Path para que encuentre pm2
+### 20. Instalamos pm2
+
+### 21- Añadimos el Path para que encuentre pm2
+```console
 -bash-5.1$ node -v
 v14.19.1
 -bash-5.1$CD PATH=/QOpenSys/pkgs/lib/nodejs14/bin:$PATH
+````
+### 22. Arrancamos el servicio web desde su Carpeta: pm2 start servicio-web-SQL-IBMi.js --watch --> Si se modifica lo rearranca
+### 23. Arrancamos el servidor web apache desde su Carpeta: pm2 start servidor-express.js 
 
-20º Arrancamos el servicio web desde su Carpeta: pm2 start servicio-web-SQL-IBMi.js --watch --> Si se modifica lo rearranca
-21º Arrancamos el servidor web apache desde su Carpeta: pm2 start servidor-express.js 
+### 24. Comprbamos que aparece ambos servicios arrancados: pm2 ls
 
-22º Comprbamos que aparece ambos servicios arrancados: pm2 ls
-
-23º Arrancamos un navegador y comprobamos que funciona: http://172.16.210.40:8099/ 
+### 25. Arrancamos un navegador y comprobamos que funciona: http://172.16.210.40:8099/ 
 Usamos la dirección IP y el puerto que usamo en "servidor-express.js"
 
-24º Podemos editar el servicio web (con nano, por ejemplo) y modificar la sentencia SQL
+### 24. Podemos editar el servicio web (con nano, por ejemplo) y modificar la sentencia SQL
 
 
 
