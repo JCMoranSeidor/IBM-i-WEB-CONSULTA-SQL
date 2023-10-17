@@ -138,7 +138,8 @@ restify escuchando en http://[::]:8033
   {"Nº Empleado":"200340","Nombre":"ROY","Inicial":"R","Apellido":"ALONZO","Departamento":"E21","Teléfono":"5698","Fecha Contrato":"1947-05-05","Cargo":"FIELDREP","Planta":16,"Género":"M","Fecha de Nacimiento":"1926-05-17","Salario":23840,"Bono":500,"Comisión":1907}
 ]
 ``` 
-### 8. Ahora creamos una palicación Web que muestre los resultado en forma de Tabla. Usamos para ello Vue.js como Framework JavaScript, Vuetify como biblioteca de componentes gráficos y axios como vehículo de llamada al Servicio Web.
+### 8. Ahora creamos una palicación Web que muestre los resultado en forma de Tabla.
+Usamos para ello Vue.js como Framework JavaScript, Vuetify como biblioteca de componentes gráficos y axios como vehículo de llamada al Servicio Web.
 Para ello nos posicionamos en el directorio raiz y creamos una aplicación Vue.js. (Utilizamos --no-git porque no queremos que nos cree un repositorio local Git):
 ```console
 PS C:\DESARROLLO\IBM i WEB CONSULTA SQL> vue create web-app-tabla-consulta --no-git
