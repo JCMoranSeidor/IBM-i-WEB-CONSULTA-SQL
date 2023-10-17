@@ -1,0 +1,15 @@
+{
+  "name": "servicio-web-consulta-sql",
+  "version": "1.0.0",
+  "description": "Servicio Web que lanza consulta SQL a IBM i",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juan Carlos Morán",
+  "license": "ISC",
+  "dependencies": {
+    "odbc": "^2.4.8",
+    "restify": "^11.1.0"
+  }
+}
