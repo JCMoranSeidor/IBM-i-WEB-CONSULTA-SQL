@@ -441,7 +441,7 @@ Esto hace que se carguen los módulos necesarios que no copiamos antes.
 -bash-5.1$ node -v
 v14.19.1
 -bash-5.1$CD PATH=/QOpenSys/pkgs/lib/nodejs14/bin:$PATH
-````
+```
 Usamos nodejs14 en el PATH, porque tenemos instalada laversión 14 de Node.js
 ### 22. Arrancamos el servicio web desde su Carpeta
 ```console
