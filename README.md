@@ -129,7 +129,11 @@ restify escuchando en http://[::]:8033
 ```
 7º Probamos en el Navegador. Como es un GET no necesitamso más: http://localhost:8033/consulta/
 ```json
-[{"Nº Empleado":"000010","Nombre":"CHRISTINE","Inicial":"I","Apellido":"HAAS","Departamento":"A00","Teléfono":"3978","Fecha Contrato":"1965-01-01","Cargo":"PRES    ","Planta":18,"Género":"F","Fecha de Nacimiento":"1933-08-24","Salario":52750,"Bono":1000,"Comisión":4220},{"Nº Empleado":"000020","Nombre":"MICHAEL","Inicial":"L","Apellido":"THOMPSON","Departamento":"B01","Teléfono":"3476","Fecha Contrato":"1973-10-10","Cargo":"MANAGER ","Planta":18,"Género":"M","Fecha de Nacimiento":"1948-02-02","Salario":41250,"Bono":800,"Comisión":3300},{"Nº Empleado":"200340","Nombre":"ROY","Inicial":"R","Apellido":"ALONZO","Departamento":"E21","Teléfono":"5698","Fecha Contrato":"1947-05-05","Cargo":"FIELDREP","Planta":16,"Género":"M","Fecha de Nacimiento":"1926-05-17","Salario":23840,"Bono":500,"Comisión":1907}]
+[
+  {"Nº Empleado":"000010","Nombre":"CHRISTINE","Inicial":"I","Apellido":"HAAS","Departamento":"A00","Teléfono":"3978","Fecha Contrato":"1965-01-01","Cargo":"PRES    ","Planta":18,"Género":"F","Fecha de Nacimiento":"1933-08-24","Salario":52750,"Bono":1000,"Comisión":4220},
+  {"Nº Empleado":"000020","Nombre":"MICHAEL","Inicial":"L","Apellido":"THOMPSON","Departamento":"B01","Teléfono":"3476","Fecha Contrato":"1973-10-10","Cargo":"MANAGER ","Planta":18,"Género":"M","Fecha de Nacimiento":"1948-02-02","Salario":41250,"Bono":800,"Comisión":3300},
+  {"Nº Empleado":"200340","Nombre":"ROY","Inicial":"R","Apellido":"ALONZO","Departamento":"E21","Teléfono":"5698","Fecha Contrato":"1947-05-05","Cargo":"FIELDREP","Planta":16,"Género":"M","Fecha de Nacimiento":"1926-05-17","Salario":23840,"Bono":500,"Comisión":1907}
+]
 ``` 
 8º Ahora creamos una palicación Web que muestre los resultado en forma de Tabla. Usamos para ello Vue.js como Framework JavaScript, Vuetify como biblioteca de componentes gráficos y axios como vehículo de llamada al Servicio Web.
 Para ello nos posicionamos en el directorio raiz y creamos una aplicación Vue.js. (Utilizamos --no-git porque no queremos que nos cree un repositorio local Git):
