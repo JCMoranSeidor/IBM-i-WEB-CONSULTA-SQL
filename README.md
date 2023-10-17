@@ -1,8 +1,10 @@
-![picture alt](https://www.seidor.com/icons/seidor.svg "SEIDOR IBERIA")
+<a href="https://www.seidor.com/">
+    <img src="https://www.seidor.com/icons/seidor.svg" alt="SEIDOR logo" title="SEIDOR" align="right" height="70" />
+</a>
+
 # Web con una Tabla que muestra datos de IBM i
 Ejemplo sencillo de Servicio Web en Node.js y aplicación JavaScript sobre Express usando datos de IBM i
 ## Paso a Paso ##
-
 ### 1. Creamos una Carpeta: "IBM i Web Consulta SQL"
 ### 2. Creamos dentro otra Carpeta: "Servicio Web Consulta SQL"
 ### 3. Nos cambiamos a esa carpeta e inicializamos aplicación Node.js:
