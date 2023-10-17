@@ -294,7 +294,7 @@ Si ahora repetimos la carga con vue add axios ya no veremos ningún error
 Modificaremos este componente para quemuestre nuestra el resultado de nuestra Consulta en fomra de Tabla.
 
 11º Borramos el contenido ./src/components/HelloWorld.vue y lo sustituimos por esto:
-
+```vue
 <template>
   <v-container>
     <v-data-table
@@ -337,7 +337,7 @@ export default {
   },
 };
 </script>
-
+```vue
 12º Cuidemos la Estética. Podemos cambiar el Logotipo y el enlace de la parte superior. Todo ello se realiza en ./src/App.vue
 
 13º Desplegamos en IBM i: cambiamos parámetros de mi PC por los de mi IBM i
