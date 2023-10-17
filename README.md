@@ -395,7 +395,7 @@ PS C:\DESARROLLO\IBM i WEB CONSULTA SQL\web-app-tabla-consulta>
 Nuestra aplicación se posiciona en un directorio ./dist.
 
 15º Creamos un Servidor Web para servir nuestra aplicación. Usamos Express. Para ello creamos otro directorio que cuelgue del raiz "express-web-server". Hacemos un npm init dentro del directorio, añadimos express (npm install express) y creamos un archivo "servidor-express.js" con el contenido siguiente:
-
+```javascript
 var express = require("express");
 var path = require("path");
 var serveStatic = require("serve-static");
@@ -407,7 +407,7 @@ var hostname = "127.0.0.1";
 app.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
-
+``` 
 16º Copiamos la Carpeta ./dist de nuestra aplicación web al directorio de nuestro servidor web express
 
 17ª Nos lo llevamos al IBM i
