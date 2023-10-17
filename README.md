@@ -354,6 +354,7 @@ Modificameos el Servicio Web para que utilice los parámetros de IBM i : *LOCALH
 Modificamos las llamadas al servicio web: cambiamos Localhost por la dirección IP de nuestro IBM i
 
 14º Construimos nuestra aplicación web: npm run build
+
 ```console
 PS C:\DESARROLLO\IBM i WEB CONSULTA SQL\web-app-tabla-consulta>npm run build
 
