@@ -57,7 +57,7 @@ added 168 packages, and audited 169 packages in 17s
 found 0 vulnerabilities
 
 El resultado final: añade los módulos necesarios en la Carpeta "node_modules" y modifica "package.json":
-
+```json
 {
   "name": "servicio-web-consulta-sql",
   "version": "1.0.0",
@@ -73,7 +73,7 @@ El resultado final: añade los módulos necesarios en la Carpeta "node_modules" 
     "restify": "^11.1.0"
   }
 }
-
+```
 5º Creamos un archivo "servicio-web-SQL-IBMi.js":
 ```javascript
 const restify = require("restify");
