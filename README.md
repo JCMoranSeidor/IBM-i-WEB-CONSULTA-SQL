@@ -185,7 +185,8 @@ Run `npm audit` for details.
 
  $ cd web-app-tabla-consulta
  $ npm run serve
-``` 
+```
+
 8º Podemos probar la aplicación para ver cómo se ve:
 ```console
 PS C:\DESARROLLO\IBM i WEB CONSULTA SQL> cd .\web-app-tabla-consulta\
@@ -197,9 +198,9 @@ PS C:\DESARROLLO\IBM i WEB CONSULTA SQL\web-app-tabla-consulta> npm run serve
 
   Note that the development build is not optimized.
   To create a production build, run npm run build.
-``` 
-9º Añadimos soporte de Vuetify a nuestra aplicación: vue add vuetify
+```
 
+9º Añadimos soporte de Vuetify a nuestra aplicación: vue add vuetify
 ```console
 
 To address all issues (including breaking changes), run:
@@ -238,9 +239,9 @@ Run `npm audit` for details.
  vuetify  Discord community: https://community.vuetifyjs.com
  vuetify  Github: https://github.com/vuetifyjs/vuetify
  vuetify  Support Vuetify: https://github.com/sponsors/johnleider
-``` 
-9º Añadimos Axios a nuestra aplicación: vue add axios:
+```
 
+9º Añadimos Axios a nuestra aplicación: vue add axios:
 ```console
 PS C:\DESARROLLO\IBM i WEB CONSULTA SQL\web-app-tabla-consulta> vue add axios
 
@@ -288,15 +289,17 @@ Para solucionar el error, editamos "package.json" y añadimos dentro de "eslintc
   "no-console": "off",
   "no-unused-vars": "off"
 }
-
+```
 Si ahora repetimos la carga con vue add axios ya no veremos ningún error
 
 10º dentro de ./src/App.vue vemos que muestra el componente HelloWorld
+```vue
     ...
     <v-main>
       <HelloWorld/>
     </v-main>
     ...
+````
 Modificaremos este componente para quemuestre nuestra el resultado de nuestra Consulta en fomra de Tabla.
 
 11º Borramos el contenido ./src/components/HelloWorld.vue y lo sustituimos por esto:
