@@ -137,7 +137,7 @@ restify escuchando en http://[::]:8033
 ``` 
 8º Ahora creamos una palicación Web que muestre los resultado en forma de Tabla. Usamos para ello Vue.js como Framework JavaScript, Vuetify como biblioteca de componentes gráficos y axios como vehículo de llamada al Servicio Web.
 Para ello nos posicionamos en el directorio raiz y creamos una aplicación Vue.js. (Utilizamos --no-git porque no queremos que nos cree un repositorio local Git):
-
+````console
 PS C:\DESARROLLO\IBM i WEB CONSULTA SQL> vue create web-app-tabla-consulta --no-git
 
 
@@ -184,8 +184,9 @@ Run `npm audit` for details.
 
  $ cd web-app-tabla-consulta
  $ npm run serve
-
-8º Podemos probar la alicación para ver cómo se ve:
+``` 
+8º Podemos probar la aplicación para ver cómo se ve:
+```console
 PS C:\DESARROLLO\IBM i WEB CONSULTA SQL> cd .\web-app-tabla-consulta\
 PS C:\DESARROLLO\IBM i WEB CONSULTA SQL\web-app-tabla-consulta> npm run serve
 
@@ -195,7 +196,7 @@ PS C:\DESARROLLO\IBM i WEB CONSULTA SQL\web-app-tabla-consulta> npm run serve
 
   Note that the development build is not optimized.
   To create a production build, run npm run build.
-
+``` 
 9º Añadimos soporte de Vuetify a nuestra aplicación: vue add vuetify
 
 
