@@ -1,8 +1,6 @@
 # IBM-i-WEB-CONSULTA-SQL
 Ejemplo sencillo de Servicio Web en Node.js y aplicación JavaScript sobre Express usando datos de IBM i
 
-![](oh-my-glob.gif)
-
 1º Creamos una Carpeta: "IBM i Web Consulta SQL"
 2º Creamos dentro otra Carpeta: "Servicio Web Consulta SQL"
 3º Nos cambiamos a esa carpeta e inicializamos aplicación Node.js:
