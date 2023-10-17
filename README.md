@@ -337,7 +337,7 @@ export default {
   },
 };
 </script>
-```
+``` 
 12º Cuidemos la Estética. Podemos cambiar el Logotipo y el enlace de la parte superior. Todo ello se realiza en ./src/App.vue
 
 13º Desplegamos en IBM i: cambiamos parámetros de mi PC por los de mi IBM i
