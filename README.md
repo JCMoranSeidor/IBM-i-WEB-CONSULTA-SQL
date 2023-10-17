@@ -354,7 +354,7 @@ Modificameos el Servicio Web para que utilice los parámetros de IBM i : *LOCALH
 Modificamos las llamadas al servicio web: cambiamos Localhost por la dirección IP de nuestro IBM i
 
 14º Construimos nuestra aplicación web: npm run build
-
+```console
 PS C:\DESARROLLO\IBM i WEB CONSULTA SQL\web-app-tabla-consulta>npm run build
 
 > web-app-tabla-consulta@0.1.0 build
@@ -400,7 +400,7 @@ For more info visit https://webpack.js.org/guides/code-splitting/
  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
 
 PS C:\DESARROLLO\IBM i WEB CONSULTA SQL\web-app-tabla-consulta>
-
+```
 Nuestra aplicación se posiciona en un directorio ./dist.
 
 15º Creamos un Servidor Web para servir nuestra aplicación. Usamos Express. Para ello creamos otro directorio que cuelgue del raiz "express-web-server". Hacemos un npm init dentro del directorio, añadimos express (npm install express) y creamos un archivo "servidor-express.js" con el contenido siguiente:
