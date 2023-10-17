@@ -75,7 +75,7 @@ El resultado final: añade los módulos necesarios en la Carpeta "node_modules" 
 }
 
 5º Creamos un archivo "servicio-web-SQL-IBMi.js":
-
+```javascript
 const restify = require("restify");
 const odbc = require("odbc");
 const server = restify.createServer();
@@ -126,7 +126,7 @@ PS C:\DESARROLLO\IBM i WEB CONSULTA SQL\Servicio Web Consulta SQL> node .\servic
 (node:23276) [DEP0111] DeprecationWarning: Access to process.binding('http_parser') is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 restify escuchando en http://[::]:8033
-
+```
 7º Probamos en el Navegador. Como es un GET no necesitamso más: http://localhost:8033/consulta/
 
 [{"Nº Empleado":"000010","Nombre":"CHRISTINE","Inicial":"I","Apellido":"HAAS","Departamento":"A00","Teléfono":"3978","Fecha Contrato":"1965-01-01","Cargo":"PRES    ","Planta":18,"Género":"F","Fecha de Nacimiento":"1933-08-24","Salario":52750,"Bono":1000,"Comisión":4220},{"Nº Empleado":"000020","Nombre":"MICHAEL","Inicial":"L","Apellido":"THOMPSON","Departamento":"B01","Teléfono":"3476","Fecha Contrato":"1973-10-10","Cargo":"MANAGER ","Planta":18,"Género":"M","Fecha de Nacimiento":"1948-02-02","Salario":41250,"Bono":800,"Comisión":3300},...,{"Nº Empleado":"200340","Nombre":"ROY","Inicial":"R","Apellido":"ALONZO","Departamento":"E21","Teléfono":"5698","Fecha Contrato":"1947-05-05","Cargo":"FIELDREP","Planta":16,"Género":"M","Fecha de Nacimiento":"1926-05-17","Salario":23840,"Bono":500,"Comisión":1907}]
