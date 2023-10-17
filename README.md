@@ -4,7 +4,7 @@ Ejemplo sencillo de Servicio Web en Node.js y aplicación JavaScript sobre Expre
 1º Creamos una Carpeta: "IBM i Web Consulta SQL"
 2º Creamos dentro otra Carpeta: "Servicio Web Consulta SQL"
 3º Nos cambiamos a esa carpeta e inicializamos aplicación Node.js:
-
+```console
 PS C:\DESARROLLO\IBM i WEB CONSULTA SQL> cd '.\Servicio Web Consulta SQL\'
 PS C:\DESARROLLO\IBM i WEB CONSULTA SQL\Servicio Web Consulta SQL> npm init
 This utility will walk you through creating a package.json file.
@@ -43,9 +43,9 @@ About to write to C:\DESARROLLO\IBM i WEB CONSULTA SQL\Servicio Web Consulta SQL
 
 Is this OK? (yes)
 PS C:\DESARROLLO\IBM i WEB CONSULTA SQL\Servicio Web Consulta SQL>
-
+``` 
 4º Añadimos los packages de ODBC y RESTIFY para que los ueda usar nuestro Servicio Web: npm install odbc restify --save
-
+```console
 PS C:\DESARROLLO\IBM i WEB CONSULTA SQL\Servicio Web Consulta SQL> npm install odbc restify --save
 npm WARN deprecated formidable@1.2.6: Please upgrade to latest, formidable@v2 or formidable@v3! Check these notes: https://bit.ly/2ZEqIau
 
@@ -55,7 +55,7 @@ added 168 packages, and audited 169 packages in 17s
   run `npm fund` for details
 
 found 0 vulnerabilities
-
+``` 
 El resultado final: añade los módulos necesarios en la Carpeta "node_modules" y modifica "package.json":
 ```json
 {
