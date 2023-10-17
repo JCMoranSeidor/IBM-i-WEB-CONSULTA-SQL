@@ -1,6 +1,6 @@
-# IBM-i-WEB-CONSULTA-SQL
+![picture alt](https://www.seidor.com/icons/seidor.svg "SEIDOR IBERIA")
+# Web con una Tabla que muestra datos de IBM i
 Ejemplo sencillo de Servicio Web en Node.js y aplicación JavaScript sobre Express usando datos de IBM i
-
 ## Paso a Paso ##
 
 ### 1. Creamos una Carpeta: "IBM i Web Consulta SQL"
