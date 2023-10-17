@@ -138,7 +138,7 @@ restify escuchando en http://[::]:8033
 ``` 
 8º Ahora creamos una palicación Web que muestre los resultado en forma de Tabla. Usamos para ello Vue.js como Framework JavaScript, Vuetify como biblioteca de componentes gráficos y axios como vehículo de llamada al Servicio Web.
 Para ello nos posicionamos en el directorio raiz y creamos una aplicación Vue.js. (Utilizamos --no-git porque no queremos que nos cree un repositorio local Git):
-````console
+```console
 PS C:\DESARROLLO\IBM i WEB CONSULTA SQL> vue create web-app-tabla-consulta --no-git
 
 
@@ -282,9 +282,9 @@ C:\DESARROLLO\IBM i WEB CONSULTA SQL\web-app-tabla-consulta\src\plugins\axios.js
   42:32  error  'options' is defined but never used  no-unused-vars
 
 ✖ 1 problem (1 error, 0 warnings)
-
+```
 Para solucionar el error, editamos "package.json" y añadimos dentro de "eslintconfig" en el apartado rules: {}:
-
+```json
 "rules": {
   "no-console": "off",
   "no-unused-vars": "off"
@@ -299,7 +299,7 @@ Si ahora repetimos la carga con vue add axios ya no veremos ningún error
       <HelloWorld/>
     </v-main>
     ...
-````
+``` 
 Modificaremos este componente para quemuestre nuestra el resultado de nuestra Consulta en fomra de Tabla.
 
 11º Borramos el contenido ./src/components/HelloWorld.vue y lo sustituimos por esto:
